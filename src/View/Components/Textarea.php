@@ -58,7 +58,7 @@ class Textarea extends Component
                         {{
                             $attributes
                             ->class([
-                                'textarea textarea-primary w-full peer',
+                                'textarea w-full peer',
                                 'pt-5' => ($inline && $label),
                                 'border border-dashed' => $attributes->has('readonly') && $attributes->get('readonly') == true,
                                 'textarea-error' => $errors->has($errorFieldName())

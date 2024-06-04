@@ -88,7 +88,7 @@ class Input extends Component
                     <div
                         @class([
                                 "rounded-l-lg flex items-center bg-base-200",
-                                "border border-primary border-r-0 px-4" => $prefix,
+                                "border border-r-0 px-4" => $prefix,
                                 "border-0 bg-base-300" => $attributes->has('disabled') && $attributes->get('disabled') == true,
                                 "border-dashed" => $attributes->has('readonly') && $attributes->get('readonly') == true,
                                 "!border-error" => $errorFieldName() && $errors->has($errorFieldName()) && !$omitError
@@ -124,7 +124,7 @@ class Input extends Component
                                 ->merge(['type' => 'text'])
                                 ->except($money ? 'wire:model' : '')
                                 ->class([
-                                    'input input-primary w-full peer',
+                                    'input input-bordered w-full peer',
                                     'pl-10' => ($icon),
                                     'h-14' => ($inline),
                                     'pt-3' => ($inline && $label),
